@@ -2,6 +2,7 @@
 
 use Faker\Generator as Faker;
 use Ramsey\Uuid\Uuid;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use Ramsey\Uuid\Uuid;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(User::class, function (Faker $faker) {
     return [
         'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,
