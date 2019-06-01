@@ -45,6 +45,15 @@ Launch browser
 
 Navigate to `http://localhost:8000`
 
+## Sample Requests
+
+In REST client or browser, enter the following requests:
+
+```http
+http://localhost:8000/api/users
+http://localhost:8000/api/users?include=addresses
+```
+
 ## Tests
 
 In command prompt, run:
