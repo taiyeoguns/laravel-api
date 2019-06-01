@@ -2,11 +2,22 @@
 
 namespace App\Transformers;
 
-use League\Fractal\TransformerAbstract;
 use App\Models\User;
+use League\Fractal\TransformerAbstract;
 
 class UserTransformer extends TransformerAbstract
 {
+    protected $availableIncludes = [
+        'addresses'
+    ];
+
+    public function includeAddresses(User $user)
+    {
+        $addresses = $user->addresses;
+
+        return $this->collection($addresses, new AddressTransformer($user));
+    }
+
     /**
      * A Fractal transformer.
      *

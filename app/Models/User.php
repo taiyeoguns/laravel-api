@@ -2,15 +2,14 @@
 
 namespace App\Models;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Dyrynda\Database\Support\GeneratesUuid;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
     use GeneratesUuid;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -29,4 +28,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function addresses()
+    {
+        return $this->belongsToMany(Address::class)->withTimestamps()->withPivot('type');
+    }
 }
