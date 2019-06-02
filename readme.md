@@ -54,6 +54,22 @@ http://localhost:8000/api/users
 http://localhost:8000/api/users?include=addresses
 ```
 
+## Documentation
+
+Generate the documentation by running the following command:
+
+```sh
+php artisan opendox:transform
+```
+
+Thereafter, documentation is available at:
+
+| Type    | URL                                    |
+| ------- | -------------------------------------- |
+| Swagger | http://localhost:8000/api/docs/swagger |
+| Redoc   | http://localhost:8000/api/docs/redoc   |
+| JSON    | http://localhost:8000/api/docs/json    |
+
 ## Tests
 
 In command prompt, run:

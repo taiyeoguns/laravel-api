@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8edc371d7e2a95a481ac6f7fb37ed667",
+    "content-hash": "f620a94a7b69cacb0c59a19d84592aec",
     "packages": [
         {
             "name": "bensampo/laravel-enum",
@@ -1561,6 +1561,72 @@
                 "php"
             ],
             "time": "2018-10-10T09:24:14+00:00"
+        },
+        {
+            "name": "noitran/opendox",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noitran/opendox.git",
+                "reference": "e1f31a7c023ab589d91d43b675f78f4d0c1b5b66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noitran/opendox/zipball/e1f31a7c023ab589d91d43b675f78f4d0c1b5b66",
+                "reference": "e1f31a7c023ab589d91d43b675f78f4d0c1b5b66",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/routing": "~5.7",
+                "php": ">=7.1",
+                "symfony/yaml": "^4.2"
+            },
+            "require-dev": {
+                "illuminate/console": "~5.7",
+                "illuminate/http": "~5.7",
+                "illuminate/support": "~5.7",
+                "laravel/lumen-framework": "~5.7",
+                "orchestra/testbench": "~3.4.2|~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Noitran\\Opendox\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Noitran\\Opendox\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Noitran.Black",
+                    "email": "noitran.black@gmail.com"
+                }
+            ],
+            "description": "OpenApi(Swagger) 3.0 package for Lumen 5.5+ and Laravel 5.5+ with REDOC UI and SwaggerUI 3",
+            "keywords": [
+                "api",
+                "documentation",
+                "laravel",
+                "lumen",
+                "openapi",
+                "redoc",
+                "redoc-ui",
+                "rest",
+                "swagger",
+                "swagger-ui"
+            ],
+            "time": "2019-01-26T17:11:47+00:00"
         },
         {
             "name": "opis/closure",
@@ -3568,6 +3634,65 @@
                 "dump"
             ],
             "time": "2018-11-25T12:50:42+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "c60ecf5ba842324433b46f58dc7afc4487dbab99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c60ecf5ba842324433b46f58dc7afc4487dbab99",
+                "reference": "c60ecf5ba842324433b46f58dc7afc4487dbab99",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "symfony/console": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-04-06T14:04:46+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
