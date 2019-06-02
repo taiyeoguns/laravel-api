@@ -17,7 +17,7 @@ class CreateAddressUserPivotTable extends Migration
         Schema::create('address_user', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id')->unsigned()->index();
-            $table->bigInteger('address_id')->unsigned()->index();
+            $table->integer('address_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('address_id')->references('id')->on('addresses')->onDelete('cascade');
             $table->tinyInteger('type')->unsigned()->default(AddressType::Home);
