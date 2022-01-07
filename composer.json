@@ -14,7 +14,7 @@
         "dyrynda/laravel-model-uuid": "~4.1",
         "fideloper/proxy": "^4.0",
         "friendsofphp/php-cs-fixer": "^2.15",
-        "laravel/framework": "5.7.*",
+        "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "noitran/opendox": "^0.1.0",
         "spatie/laravel-fractal": "^5.5"
